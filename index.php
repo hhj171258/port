@@ -57,12 +57,13 @@
 						$db = mysqli_connect($host, $user, $pass);
 						mysqli_select_db($db, 'hhj171258');
 
-						$sql = "select Code, Name from port_work where Publ = 'Y' order by date, code";
+						$sql = "select Code, Name, Date from port_work where Publ = 'Y' order by date, code";
 						$result =  mysqli_query($db, $sql);
 
 						while($data = mysqli_fetch_array($result))
 						{
-							echo "<div class='swiper-slide'><img src='/port/images/main/img_work_$data[0].jpg' alt=''><div><strong>$data[1]</strong><span class='btn-more $data[0]'><a href='javascript: void(0);'>자세히 보기</a></span></div></div>";
+							$date = substr($data[2], 0, 4).'.'.substr($data[2], 4, 2);
+							echo "<div class='swiper-slide'><img src='/port/images/main/img_work_$data[0].jpg' alt=''><div><strong>$data[1]</strong><span class='date'>$date</span><span class='btn-more $data[0]'><a href='javascript: void(0);'>자세히 보기</a></span></div></div>";
 						}
 					?>
 				</div>
@@ -115,7 +116,7 @@
 							<span>70%</span>
 							<p>PHP</p>
 							<span>50%</span>
-							<small>PHP는 <a href="/m_knco" target="_blank">경농</a>에 사용되었습니다.</small>
+							<small>PHP는 <a href="/m_knco" target="_blank">경농</a>과 <a href="/port">포트폴리오</a>에 사용되었습니다.</small>
 						</div>
 					</li>
 					<li>
