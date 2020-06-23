@@ -83,7 +83,9 @@
 .work .swiper-slide:hover img{transform: scale(1.1);}
 .work .swiper-slide div{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.8); opacity: 0; transition: 0.2s ease;}
 .work .swiper-slide:hover div{opacity: 1;}
-.work .swiper-slide div strong{display: block;margin-top: 160px;font: 500 2rem "Noto Serif KR";text-align: center;color: #fff;}
+.work .swiper-slide div strong,
+.work .swiper-slide div .date{display: block;margin-top: 145px;font: 500 2rem "Noto Serif KR";text-align: center;color: #fff;}
+.work .swiper-slide div .date{margin-top: 10px; font-size: 1.6rem; line-height: 20px;}
 .work .swiper-slide div .btn-more a{margin: 16px auto 0; font-size: 1.4rem; line-height: 32px;  color: #fff;}
 
 /* contact */
