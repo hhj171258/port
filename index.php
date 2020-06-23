@@ -5,7 +5,7 @@
 <div id="wrap">
 	<header id="header">
 		<div class="header-inner">
-			<h1><a href="/port"></a></h1>
+			<h1><a href="/port">HyunJin</a></h1>
 			<nav>
 				<ul>
 					<li><a href="javascript: void(0);">Profile</a></li>
@@ -68,92 +68,91 @@
 					?>
 				</div>
 			</div>
-			</section>
-			<!--// work -->
-			<!-- contact -->
-			<section class="contact">
-				<div class="contact-bg"><img src="/port/images/main/bg_contact.jpg" alt=""></div>
-				<div class="text">
-					<h2>Contact</h2>
-					<p>연락을 기다리고 있습니다.</p>
-					<p>
-						<a href="tel:010-7731-3015">010-7721-3015</a>
-						<a href="mailto:hhj171258@gmail.com">hhj171258@gmail.com</a>
-					</p>
-				</div>
-			</section>
-			<!--// contact -->
-			<!-- skill -->
-			<section class="skill">
-				<h2>Skills</h2>
-				<ul class="skill-inner">
-					<li>
-						<div class="front">
-							<img src="/port/images/main/img_skil1.jpg" alt="">
-							<strong>Design</strong>
-							<p>Photoshop을 이용해 간단한 사진 편집 및 보정, 배너제작을 할 수 있으며, Illustration을 사용해 아이콘 제작 및 편집을 할 수 있습니다.</p>
-						</div>
-						<div class="back">
-							<strong>Design</strong>
-							<p>Photoshop</p>
-							<span>75%</span>
-							<p>Illustration</p>
-							<span>70%</span>
-							<small>게재된 모든 이미지는 Photoshop 혹은 Illustration을 이용해 편집되었습니다.</small>
-						</div>
-					</li>
-					<li>
-						<div class="front">
-							<img src="/port/images/main/img_skil2.jpg" alt="">
-							<strong>Coding</strong>
-							<p>HTML5, CSS3, Jquery, PHP로 웹사이트를 구현할 수 있습니다. 또한 MySQL을 통해 게시판과 상품페이지를 구현할 수 있습니다.</p>
-						</div>
-						<div class="back">
-							<strong>Coding</strong>
-							<p>HTML5, CSS3</p>
-							<span>70%</span>
-							<p>Jquery</p>
-							<span>70%</span>
-							<p>PHP</p>
-							<span>50%</span>
-							<small>PHP는 <a href="/m_knco" target="_blank">경농</a>과 <a href="/port">포트폴리오</a>에 사용되었습니다.</small>
-						</div>
-					</li>
-					<li>
-						<div class="front">
-							<img src="/port/images/main/img_skil3.jpg" alt="">
-							<strong>Others</strong>
-							<p>아래아한글, Excel, Word을 사용해 문서작업을 할 수 있으며, Powerpiont를 이용한 발표자료 제작을 할 수 있습니다.</p>
-						</div>
-						<div class="back">
-							<strong>Others</strong>
-							<p>아래아한글</p>
-							<span>75%</span>
-							<p>Excel</p>
-							<span>70%</span>
-							<p>Word</p>
-							<span>75%</span>
-							<p>Powerpiont</p>
-							<span>75%</span>
-							<small>게재된 기획서는 모두 Powerpoint로 제작되었습니다.</small>
-						</div>
-					</li>
-				</ul>
-			</section>
-			<!--// skill -->
-		</div>
-		<!-- footer --> 
-		<footer id="footer">
-			<p>
-				해당 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.<br>
-				사용된 모든 이미지들은 출처가 따로 있으며 포트폴리오 용도로만 사용되었습니다.<br>
-				Copyright Hyunjin All Rights Reserved.
-			</p>
-		</footer>
-		<!--// footer --> 
-		<a href="javascript: void(0);">상단으로</a>
-		<?php include "/host/home1/hhj171258/html/port/include/work-modal.inc" ?>
+		</section>
+		<!--// work -->
+		<!-- contact -->
+		<section class="contact">
+			<div class="contact-bg"><img src="/port/images/main/bg_contact.jpg" alt=""></div>
+			<div class="text">
+				<h2>Contact</h2>
+				<p>연락을 기다리고 있습니다.</p>
+				<p>
+					<a href="tel:010-7731-3015">010-7721-3015</a>
+					<a href="mailto:hhj171258@gmail.com">hhj171258@gmail.com</a>
+				</p>
+			</div>
+		</section>
+		<!--// contact -->
+		<!-- skill -->
+		<section class="skill">
+			<h2>Skills</h2>
+			<ul class="skill-inner">
+				<li>
+					<div class="front">
+						<img src="/port/images/main/img_skil1.jpg" alt="">
+						<strong>Design</strong>
+						<p>Photoshop을 이용해 간단한 사진 편집 및 보정, 배너제작을 할 수 있으며, Illustration을 사용해 아이콘 제작 및 편집을 할 수 있습니다.</p>
+					</div>
+					<div class="back">
+						<strong>Design</strong>
+						<p>Photoshop</p>
+						<span>75%</span>
+						<p>Illustration</p>
+						<span>70%</span>
+						<small>게재된 모든 이미지는 Photoshop 혹은 Illustration을 이용해 편집되었습니다.</small>
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<img src="/port/images/main/img_skil2.jpg" alt="">
+						<strong>Coding</strong>
+						<p>HTML5, CSS3, Jquery, PHP로 웹사이트를 구현할 수 있습니다. 또한 MySQL을 통해 게시판과 상품페이지를 구현할 수 있습니다.</p>
+					</div>
+					<div class="back">
+						<strong>Coding</strong>
+						<p>HTML5, CSS3</p>
+						<span>70%</span>
+						<p>Jquery</p>
+						<span>70%</span>
+						<p>PHP</p>
+						<span>50%</span>
+						<small>PHP는 <a href="/m_knco" target="_blank">경농</a>과 <a href="/port">포트폴리오</a>에 사용되었습니다.</small>
+					</div>
+				</li>
+				<li>
+					<div class="front">
+						<img src="/port/images/main/img_skil3.jpg" alt="">
+						<strong>Others</strong>
+						<p>아래아한글, Excel, Word을 사용해 문서작업을 할 수 있으며, Powerpiont를 이용한 발표자료 제작을 할 수 있습니다.</p>
+					</div>
+					<div class="back">
+						<strong>Others</strong>
+						<p>아래아한글</p>
+						<span>75%</span>
+						<p>Excel</p>
+						<span>70%</span>
+						<p>Word</p>
+						<span>75%</span>
+						<p>Powerpiont</p>
+						<span>75%</span>
+						<small>게재된 기획서는 모두 Powerpoint로 제작되었습니다.</small>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!--// skill -->
 	</div>
+	<!-- footer --> 
+	<footer id="footer">
+		<p>
+			해당 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.<br>
+			사용된 모든 이미지들은 출처가 따로 있으며 포트폴리오 용도로만 사용되었습니다.<br>
+			Copyright Hyunjin All Rights Reserved.
+		</p>
+	</footer>
+	<!--// footer --> 
+	<a href="javascript: void(0);">상단으로</a>
+	<?php include "/host/home1/hhj171258/html/port/include/work-modal.inc" ?>
 </div>
 <script src="/port/script/main.js"></script>
 </body>
