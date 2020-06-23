@@ -1,0 +1,194 @@
+/* float */
+#header::after,
+.prof .prof-inner::after,
+.skill .skill-inner::after,
+.work::after,
+.work .cntr::after,
+.work .swiper-wrapper::after,
+.work-modal .content dl::after,
+.work-modal .content .prst::after{content:""; display: block; clear: both;}
+
+/* header */
+#wrap{width: 100%; background-color: #000121;}
+#header{position: fixed;top: 0;left: 0;width: 100%;z-index: 100;transition: 0.2s ease;}
+#header .header-inner{margin: 0 auto; width: 1600px;}
+#header h1{float: left;width: 120px;height: 54px;}
+#header nav{float: right;}
+#header nav ul,
+#header nav ul li{float: left;font: 500 1.6rem/72px "Noto Serif KR";}
+#header nav ul li + li{margin-left: 48px;}
+#header nav ul li a{color: #fff; transition: 0.2s ease;}
+#header nav ul li:hover a{color: #f9ba00;}
+
+/* prof */
+.prof{position: relative;width: 100%;height: 100vh;}
+.prof .prof-inner{margin: auto;width: 1600px;z-index: 1;}
+.prof .prof-inner .img{position: relative;float: left;height: calc(100vh - 60px);}
+.prof .prof-inner .img img{display: block; height: 100%;}
+.prof .prof-inner .img img + img{position: absolute; left: 0; top: 0;}
+.prof .prof-inner .img img:nth-of-type(-n+3){animation: 15s ease 0s infinite cloud1;}
+.prof .prof-inner .img img:nth-of-type(2){animation-delay: 3s}
+.prof .prof-inner .img img:nth-of-type(3){animation-delay: 6s}
+
+@keyframes cloud1{50%{transform: translate(30px, 15px);}}
+
+.prof .prof-inner .text{float: left;padding: calc(50vh - 145px) 60px;padding-right: 0;width: calc(1600px - 112.5vh + 7.5px);word-break: keep-all;font: 500 1.6rem/32px "Noto Serif KR";}
+.prof .prof-inner .text *{color: #fff;}
+.prof .prof-inner .text h2{margin-bottom: 24px;}
+.prof .prof-inner .text em,
+.work .text p em{color: #f9ba00;font-style: italic;}
+.btn-more{display: block; overflow: hidden;}
+.prof .prof-inner .btn-more a,
+.work .text .btn-more a,
+.work .swiper-slide div .btn-more a{display: block; margin: 20px  auto; width: 120px; border: 1px solid #fff; font: 500 1.6rem/36px "Noto Serif KR"; text-align: center; transition: 0.2s ease; }
+.prof .prof-inner .btn-more a{margin-left: 0;}
+.btn-more a:hover{background-color: #fff; color: #000121 !important;}
+.prof .prof-inner .btn-more a:hover{background-color: #f9ba00; border-color: #f9ba00;}
+.prof .prof-cloud{position: relative; padding-bottom: 36px;width: 100%;z-index: 10;}
+.prof .prof-cloud .cloud{width: 100%;margin-top: -100px;height: 124px;background-image: url("/port/images/main/bg_prof.png");z-index: 30;animation: 10s cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s infinite cloud2;}
+.prof .prof-cloud .cloud + .cloud{position: absolute;top: 0;margin-top: 36px;z-index: 10;animation-delay: 2s;}
+
+@keyframes cloud2{50%{background-position-x: 100px;}}
+
+
+/* work */
+.work{position: relative;padding: 100px 0;width: 100%;}
+.work h2,
+.skill h2,
+.contact h2{padding-bottom: 54px; font: italic 700 3.2rem/54px "Noto Serif KR";text-align: center;color: #f9ba00;}
+.work .text,
+.work .cntr{float: left;margin-left: calc(50% - 800px);width: 400px;}
+.work .text *{font: 500 1.6rem "Noto Serif KR"; color: #fff;}
+.work .text p{word-break: keep-all; letter-spacing: 1.0px;line-height: 28px;}
+.work .text p a{text-decoration: underline; color: #f9ba00;}
+.work .text .btn-more a{margin: 40px 0 0;}
+
+.work .cntr{clear: both;padding: 244px 0 0 298px;width: unset;}
+.work .cntr span{display: block;float: left;width: 42px;height: 42px;border: 1px solid #fff;cursor: pointer;transition: 0.2s ease;outline: 0;}
+.work .cntr span + span{margin-left: 20px;}
+.work .cntr .swiper-prev:hover,
+.work .cntr .swiper-next:hover{background-color: #f9ba00;}
+.work .cntr .swiper-prev::before,
+.work .cntr .swiper-next::before,
+.work .cntr .swiper-prev::after,
+.work .cntr .swiper-next::after{content: "";display: block; margin-top: 20px; margin-left: 10px; width: 20px;height: 2px;background-color: #fff; transform: rotate(-45deg); transform-origin: left;}
+.work .cntr .swiper-prev::after,
+.work .cntr .swiper-next::after{margin-top: -2px; transform: rotate(45deg);transform-origin: left;}
+.work .cntr .swiper-next::before,
+.work .cntr .swiper-next::after{transform-origin: right;}
+
+.work .swiper-container{position: absolute;left: calc(50% - 340px);width: calc(50% + 340px) !important;}
+.work .swiper-slide{overflow: hidden; width: 280px;height: 400px;position: relative;background-color: #fff;}
+.work .swiper-slide img{transition: 0.2s ease;}
+.work .swiper-slide:hover img{transform: scale(1.1);}
+.work .swiper-slide div{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.8); opacity: 0; transition: 0.2s ease;}
+.work .swiper-slide:hover div{opacity: 1;}
+.work .swiper-slide div strong{display: block;margin-top: 160px;font: 500 2rem "Noto Serif KR";text-align: center;color: #fff;}
+.work .swiper-slide div .btn-more a{margin: 16px auto 0; font-size: 1.4rem; line-height: 32px;  color: #fff;}
+
+/* contact */
+.contact{overflow: hidden; position: relative; width: 100%;}
+.contact .contact-bg{overflow: hidden; display: block;margin: -8px 0 0 -16px; width: calc(100% + 32px); height: 245px; filter: grayscale(95%); z-index: 0; transition: filter 0.3s ease;}
+.contact:hover .contact-bg{filter: grayscale(0);}
+.contact .contact-bg img{display: block; width: 100%; filter:blur(8px);}
+.contact:hover .contact-bg img{filter: blur(0);}
+.contact .text{position: absolute; left: 0; right: 0;top: 0; padding: 80px 200px; z-index: 10;}
+.contact h2{padding-bottom: 8px; text-align: right; color: unset; transition: 0.3s ease;}
+.contact:hover h2{color: #f9ba00;}
+.contact p, .contact p a{text-align: right; font: italic 500 1.6rem "Noto Serif KR";color: #fff; transition: 0.3s ease;}
+.contact:hover p:first-of-type{display: none;}
+.contact p + p{display: none;}
+.contact:hover p + p{display: block;}
+.contact p a{display: inline-block; text-decoration: underline;}
+.contact p a + a{margin-left: 24px;}
+
+/* skill */
+.skill{margin: 0 auto;padding: 100px 0;width: 1600px;}
+.skill .skill-inner{margin: 0 auto; width: 1120px;}
+.skill .skill-inner li{overflow: hidden; position: relative; float: left; width: 320px;}
+.skill .skill-inner li + li{margin-left: 80px;}
+.skill .front{min-height: 380px; transform-style: preserve-3d; transform: rotateY(0deg); transition: 0.5s ease; backface-visibility: hidden; background-color: #fff;}
+.skill li:hover .front{transform: rotateY(180deg);}
+.skill .front img{display: block;width: 100%;height: 200px;}
+.skill * strong{display: block; padding-top: 16px; font: 700 2rem "Noto Serif KR";text-align: center;}
+.skill .front p{padding: 16px; font: 400 1.6rem "Noto Serif KR"; text-align: center; word-break: keep-all;}
+
+.skill .back{position: absolute;top: 0;left: 0; transform-style: preserve-3d;z-index: 1;transform: rotateY(-180deg);transition: 0.5s ease;backface-visibility: hidden; background-color: #d97b66;}
+.skill li:nth-child(1) .back{padding: 99px 24px;}
+.skill li:nth-child(2) .back{padding: 81px 24px;}
+.skill li:nth-child(3) .back{padding: 63px 24px}
+.skill li:hover .back{transform: rotateY(0deg); z-index: 1;}
+.skill .back *{color: #fff;}
+.skill .back strong{padding-bottom: 16px;}
+.skill .back p,
+.skill .back span{float: left; width: 110px;font: 400 1.6rem/36px "Noto Serif KR";}
+.skill .back span{position: relative;margin: 8px 0 8px 18px;padding: 0 12px;width: 120px;font-size: 14px;line-height: 20px;color: transparent;background-color: #fff;}
+.skill li:nth-of-type(1) .back span:nth-of-type(1)::before,
+.skill li:nth-of-type(3) .back span:not(:nth-of-type(2))::before{content: "75%";}
+.skill li:nth-of-type(1) .back span:nth-of-type(2)::before,
+.skill li:nth-of-type(2) .back span:not(:nth-of-type(3))::before, 
+.skill li:nth-of-type(3) .back span:nth-of-type(2)::before{content: "70%";}
+.skill li:nth-of-type(2) .back span:nth-of-type(3)::before{content: "50%";}
+.skill .back span::before{content:""; position: absolute; top: 0; left: 0; display: block;  width: 0; height: 100%; color: #fff; text-align: right; background-color: #f9ba00; transition: 0.4s ease-in-out 0.3s; z-index: 1;}
+.skill li:nth-of-type(1):hover .back span:nth-of-type(1)::before,
+.skill li:nth-of-type(3):hover .back span:not(:nth-of-type(2))::before{width: calc(75% - 12px);}
+.skill li:nth-of-type(1):hover .back span:nth-of-type(2)::before,
+.skill li:nth-of-type(2):hover .back span:not(:nth-of-type(3))::before, 
+.skill li:nth-of-type(3):hover .back span:nth-of-type(2)::before{width: calc(70% - 12px);}
+.skill li:nth-of-type(2):hover .back span:nth-of-type(3)::before{width: calc(50% - 12px);}
+.skill li:hover .back span::before{padding-right: 12px;}
+.skill li:not(:hover) .back span::before{transition: 0s ease 0s;}
+.skill .back small{display: block;clear: both;padding-top: 10px;font: italic 400 1.4rem "Noto Serif KR";}
+.skill .back small a{text-decoration: underline;}
+
+/* footer */
+#footer{width: 100%; border-top: 1px solid #fff;}
+#footer p{margin: 0 auto; padding: 16px 0; width: 1600px; font: 300 1.4rem/28px "Noto Serif KR"; color: #fff; text-align: center;}
+
+/* top */
+#footer + a{position: fixed;bottom: 40px;right: calc(50% - 800px);display: block; width: 72px; height: 72px; border: 2px solid #000121;font: 700 1.4rem/72px "Noto Serif KR";text-align: center;z-index: 30; background-color: #fff;}
+
+/* modal */
+.work-modal{position: fixed !important;top: 0;left: 0;right: 0;bottom: 0;display: none;z-index: 100;background-color: #fff;}
+.work-modal .btn-close{position: fixed;top: 36px;right: 36px;display: block;width: 38px;height: 38px;border: 2px solid #222;border-radius: 22px;text-align: center;cursor: pointer;background-color: #fff;}
+.work-modal .btn-close i{font: 600 2.8rem/38px "Font Awesome 5 Free";color: #222;}
+.work-modal .title *{text-align: center; font: 400 2.6rem/28px "Noto Sans KR"; color: #fff;}
+.work-modal .title h3{padding-top: 60px;}
+.work-modal .title p{padding: 10px 0 120px;font-size: 1.8rem;letter-spacing: 1.1px;}
+
+.work-modal .content{margin: -80px auto 80px;width: 1200px;}
+.work-modal .content .view img{display: block; margin: 0 auto;}
+.work-modal .content .desc,
+.work-modal .content article{margin: 40px 0; font: 300 1.6rem/28px "Noto Sans KR";}
+.work-modal .content .desc *{float: left;}
+.work-modal .content .desc dt,
+.work-modal .content .desc dd{width: 100px}
+.work-modal .content .desc dt + dt, .work-modal .content .desc dd + dd{width: 275px;letter-spacing: -0.07px;}
+.work-modal .content .desc dt{font-weight: 500; font-size: 1.8rem; color: #bbb;}
+.work-modal .content .link{text-align: center; font-size: 0;}
+.work-modal .content .link li{position: relative; display: inline-block; margin: 0 20px; width: 120px; height: 32px; border: 1px solid #222;}
+.work-modal .content .link li:hover{width: 122px; height: 34px; border: 0;}
+.work-modal .content .link a{position: absolute;left: 0;top: 0;display: block;width: 120px;font: 400 1.8rem/32px "Noto Sans KR";z-index: 0;}
+.work-modal .content .link li a::before{content: ""; position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; background-color: #fff; transform: scaleX(1); transform-origin: right; z-index: -1; transition: 0.3s ease;}
+.work-modal .content .link li:hover a{color: #fff; width: 122px; height: 34px;}
+.work-modal .content .link li:hover a::before{transform: scaleX(0);} 
+.work-modal .content article h4{padding: 0 10px 10px; border-bottom: 2px solid; margin-bottom: 10px; font-weight: 500; font-size: 1.8rem;}
+.work-modal .content article p{padding: 0 10px;}
+.work-modal .content .prst h4{margin-bottom: 20px;}
+.work-modal .content .prst div{width: calc(50% - 20px); float: left;}
+.work-modal .content .prst div:nth-of-type(n + 3){margin-top: 20px;}
+.work-modal .content .prst div:nth-of-type(2n){margin-left: 20px;}
+.work-modal .content .prst img{display: block; box-sizing: border-box; width: 100%; border: 1px solid #ddd;}
+
+/* modal scrollbar https://gromo.github.io/jquery.scrollbar/demo/basic.html */
+.scroll-wrapper > .scroll-element, .scroll-wrapper > .scroll-element div{ border: none; margin: 0;padding: 0;position: absolute;z-index: 150;}
+.scroll-wrapper > .scroll-element div{display: block; height: 100%; left: 0; top: 0; width: 100%;}
+.scroll-wrapper > .scroll-element.scroll-y {height: 100%; right: 2px;top: 0; width: 12px;}
+.scroll-wrapper > .scroll-element .scroll-element_outer{overflow: hidden;}
+.scroll-wrapper > .scroll-element .scroll-element_outer,
+.scroll-wrapper > .scroll-element .scroll-element_track,
+.scroll-wrapper > .scroll-element .scroll-bar{border-radius: 6px;}
+.scroll-wrapper > .scroll-element .scroll-element_track { background-color: rgba(224, 224, 224, 0.4);}
+.scroll-wrapper > .scroll-element .scroll-bar{background-color: #ddd;}
+.scroll-wrapper > .scroll-element:hover .scroll-bar{background-color: #919191;}
+.scroll-wrapper > .scroll-element.scroll-draggable .scroll-bar{background-color: #919191;}
