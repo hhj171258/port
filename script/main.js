@@ -22,13 +22,13 @@ $(function(){
 
 function header(){
 	var lastScrollTop = 0,
-		delta = 15;
+		delta = 30;
 	$(document).on('scroll', function(){
 		var scrollTop = $(this).scrollTop();
 		if(Math.abs(lastScrollTop - scrollTop) <= delta) return; // delta보다 적게 올라감
 		if((scrollTop > lastScrollTop) && (lastScrollTop > 0)){ $('#header').css('top', '-75px');}
 		else { 
-			if(scrollTop <= delta) { $('#header').css({'top':'0px','background-color': 'unset', 'border-bottom': 'unset'});}
+			if(scrollTop <= delta) {$('#header').css({'top':'0px','background-color': 'transparent', 'border-bottom': 'none'});}
 			else { $('#header').css({'top':'0px', 'background-color' : '#000121','border-bottom': '1px solid #fff'});}
 		}
 		lastScrollTop = scrollTop;
