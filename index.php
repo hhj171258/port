@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head><?php include "/host/home1/hhj171258/html/port/include/head.inc" ?></head>
 <body>
@@ -116,7 +116,7 @@
 						<span>70%</span>
 						<p>PHP</p>
 						<span>50%</span>
-						<small>PHP는 <a href="/m_knco" target="_blank">경농</a>과 <a href="/port">포트폴리오</a>에 사용되었습니다.</small>
+						<small>PHP는 <a href="https://github.com/hhj171258/m_knco/blob/master/sub2_1.php" target="_blank" title="Git Source로 이동합니다">경농</a>,<a href="https://github.com/hhj171258/port/blob/master/index.php" target="_blank" title="Git Source로 이동합니다">포트폴리오</a>, <a href="https://github.com/hhj171258/gjmu" title="Git Source로 이동합니다">국립경주박물관</a>에 사용되었습니다.</small>
 					</div>
 				</li>
 				<li>
