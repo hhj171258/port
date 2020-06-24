@@ -33,8 +33,8 @@
 						</dl>
 						<ul class='link'>";
 							//모바일인 경우
-							if(substr($data[1], 0, 2) == "m_" && $data[1] <> "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=320, height=640\")'>";
-							else if($data[1] == "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=720, height=1080\")'>";
+							if(substr($data[1], 0, 2) == "m_" && $data[1] <> "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=377, height=640\")'>";
+							else if($data[1] == "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=737, height=920\")'>";
 							else echo "<li><a href='http://hhj171258.dothome.co.kr/$data[1]' target='_blank'>";
 							//리뉴얼인 경우
 							if($data[9] == "") echo "Site</a></li>";
@@ -59,9 +59,10 @@
 						if($data[15] <> "") echo "<article class='rviw'><h4>Review</h4><p>$data[15]<p></article>";
 						if($data[14] <> "")
 						{
-							echo "<ul class='link'>";
+							echo "<ul>";
 							//모바일인 경우
-							if(substr($data[1], 0, 2) == "m_") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=320, height=640\")'>";
+							if(substr($data[1], 0, 2) == "m_" && $data[1] <> "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=377, height=640\")'>";
+							else if($data[1] == "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=737, height=920\")'>";
 							else echo "<li><a href='http://hhj171258.dothome.co.kr/$data[1]' target='_blank'>";
 							//리뉴얼인 경우
 							if($data[9] == "") echo "Site</a></li>";
