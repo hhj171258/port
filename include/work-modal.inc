@@ -59,7 +59,7 @@
 						if($data[15] <> "") echo "<article class='rviw'><h4>Review</h4><p>$data[15]<p></article>";
 						if($data[14] <> "")
 						{
-							echo "<ul>";
+							echo "<ul class='link'>";
 							//모바일인 경우
 							if(substr($data[1], 0, 2) == "m_" && $data[1] <> "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=377, height=640\")'>";
 							else if($data[1] == "m_gjmu") echo "<li><a href='javascript: void(0);' onClick='window.open(\"http://hhj171258.dothome.co.kr/$data[1]\", \"_blank\", \"width=737, height=920\")'>";

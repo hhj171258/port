@@ -41,7 +41,7 @@
 		<section class="work">
 			<h2>Works</h2>
 			<div class="text">
-				<p>사이트에 게재된 작업물 중 <em>2020년 2월</em>부터 <em>2020년 6월</em> 사이에 만든 사이트는 <a href="http://hscampus.com"><em>효성직업전문학교</em></a>에서 <em>웹퍼블리싱&UI/UX 개발자양성과정</em>을 수강하면서 만든 작업물입니다.</p>
+				<p>사이트에 게재된 작업물 중 <em>2020년 2월</em>부터 <em>2020년 6월</em> 사이에 만든 사이트는 <a href="http://hscampus.com" target="_blank"><em>효성직업전문학교</em></a>에서 <em>웹퍼블리싱&UI/UX 개발자양성과정</em>을 수강하면서 만든 작업물입니다.</p>
 			</div>
 			<div class="cntr">
 				<span class="swiper-prev"></span>
@@ -116,7 +116,7 @@
 						<span>70%</span>
 						<p>PHP</p>
 						<span>50%</span>
-						<small>PHP는 <a href="https://github.com/hhj171258/m_knco/blob/master/sub2_1.php" target="_blank" title="Git Source로 이동합니다">경농</a>,<a href="https://github.com/hhj171258/port/blob/master/index.php" target="_blank" title="Git Source로 이동합니다">포트폴리오</a>, <a href="https://github.com/hhj171258/gjmu" title="Git Source로 이동합니다">국립경주박물관</a>에 사용되었습니다.</small>
+						<small>PHP는 <a href="https://github.com/hhj171258/m_knco/blob/master/sub2_1.php" target="_blank" title="Git Source로 이동합니다">경농</a>, <a href="https://github.com/hhj171258/port/blob/master/index.php" target="_blank" title="Git Source로 이동합니다">포트폴리오</a>, <a href="https://github.com/hhj171258/gjmu" target="_blank" title="Git Source로 이동합니다">국립경주박물관</a>에 사용되었습니다.</small>
 					</div>
 				</li>
 				<li>
